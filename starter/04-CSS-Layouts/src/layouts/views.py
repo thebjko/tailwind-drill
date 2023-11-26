@@ -5,7 +5,7 @@ def index(request):
     return render(request, 'layouts/index.html')
 
 def grid(request):
-    return render(request, 'layouts/grid.html')
+    return render(request, 'layouts/css-grid.html')
 
 def flexbox(request):
     return render(request, 'layouts/flexbox.html')
