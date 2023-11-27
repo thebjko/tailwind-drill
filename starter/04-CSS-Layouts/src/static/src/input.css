@@ -30,6 +30,8 @@
   }
   
   .container--1 {
+    /* TEMPORARY */
+    display: none;
     /* STARTER */
     font-family: sans-serif;
     background-color: #ddd;
@@ -49,5 +51,19 @@
     width: 1000px;
     height: 600px;
     /* CSS GRID */
+    display: grid;
+    grid-template-columns: 125px 200px 125px;
+    grid-template-rows: 250px 100px;
+    gap: 50px;
+
+    justify-content: center;
+    align-content: end;
+
+    justify-items: start;
+    align-items: center;
+  }
+  .el--3 {
+    align-self: end;
+    justify-self: stretch;
   }
 }
