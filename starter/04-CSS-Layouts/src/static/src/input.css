@@ -18,7 +18,7 @@ body {
 }
 
 .product-img {
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 /* PRODUCT */
@@ -40,7 +40,7 @@ body {
 /* PRODUCT INFORMATION */
 .product-info {
   width: 243px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   margin-top: 20px;
 }
 
