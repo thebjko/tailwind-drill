@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./src/templates/*.{html,js}",
-    "./src/static/src/input.css",
     "./src/layouts/templates/layouts/*.{html,js}",
   ],
   theme: {
