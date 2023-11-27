@@ -38,7 +38,7 @@
   
   /* PRODUCT INFORMATION */
   .product-info {
-    @apply flex-1 mt-5
+    @apply mt-5
   }
   
   .price {
@@ -104,7 +104,7 @@
   
   /* PRODUCT DETAILS */
   .product-details {
-    @apply flex-1 mt-5
+    @apply mt-5
   }
   
   .details-title {
