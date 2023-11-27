@@ -572,12 +572,20 @@ video {
   position: static;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-between {
