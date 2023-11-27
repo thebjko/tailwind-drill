@@ -592,10 +592,6 @@ video {
   justify-content: space-between;
 }
 
-.self-center {
-  align-self: center;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -684,7 +680,6 @@ body {
   height: 22px;
   width: 22px;
   display: inline-block;
-  margin-right: 10px;
 }
 
 .color-blue {
