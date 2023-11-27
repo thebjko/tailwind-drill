@@ -584,6 +584,10 @@ video {
   justify-content: space-between;
 }
 
+.self-center {
+  align-self: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -637,8 +641,6 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   color: #777;
-  margin-bottom: 20px;
-  margin-top: 8px;
 }
 
 .sale {
