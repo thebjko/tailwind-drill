@@ -6,23 +6,14 @@
   li:first-child {
     @apply font-bold
   }
-}
 
-body {
-  color: #444;
-  font-family: sans-serif;
-  border-top: 10px solid #1098ad;
-  position: relative;
-}
+  body {
+    @apply text-[#444] font-sans relative border-t-4 border-indigo-400
+  }
 
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  aside {
+    @apply bg-[#f7f7f7] border-t-4 border-orange-400 py-4 w-[500px] border-b-4
+  }
 }
 
 h1,
