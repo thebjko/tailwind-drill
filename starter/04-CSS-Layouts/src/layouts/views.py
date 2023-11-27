@@ -12,3 +12,6 @@ def flexbox(request):
 
 def blog(request):
     return render(request, 'layouts/blog.html')
+
+def challenges(request):
+    return render(request, 'layouts/challenges.html')
