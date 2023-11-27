@@ -5,11 +5,7 @@ module.exports = {
     "./src/layouts/templates/layouts/*.{html,js}",
   ],
   theme: {
-    extend: {
-      width: {
-        800: "800px",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
