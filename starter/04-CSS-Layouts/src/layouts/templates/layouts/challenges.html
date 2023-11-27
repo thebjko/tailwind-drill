@@ -1,27 +1,37 @@
 {% extends "base.html" %}
 {% block content %}
-<article class="border-4 w-[825px] my-12 mx-auto border-black">
-  <h2 class="text-center text-2xl text-black uppercase bg-slate-100 p-2 m-0">Converse Chuck Taylor All Star Low Top</h2>
-  <img class="w-[250px] h-auto float-left mr-10" src="https://i.imgur.com/ZrTU3VK.jpeg" alt="Chuck Taylor All Star Shoe">
-  <div id="product-info" class="w-[243px] float-left mr-10 pt-5">
-    <p class="text-2xl float-left"><strong>$65.00</strong></p>
-    <p class="text-xs uppercase font-bold text-slate-400 mb-5 float-right">Free shipping</p>
-    <p class="text-xs uppercase font-bold tracking-widest py-2 px-4 bg-red-200 inline-block absolute top-[-17px] left-[-38px]">Sale</p>
-    <p class="text-lg clear-both">
+<article class="product">
+  <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
+  <div class="container clearfix">
+  <img
+    src="https://i.imgur.com/ZrTU3VK.jpeg"
+    alt="Chuck Taylor All Star Shoe"
+    height="250"
+    width="250"
+    class="product-img"
+  />
+  <div class="product-info">
+      <p class="price"><strong>$65.00</strong></p>
+      <p class="shipping">Free shipping</p>
+  <p class="sale">Sale</p>
+  
+    <p class="product-description">
       Ready to dress up or down, these classic canvas Chucks are an everyday
       wardrobe staple.
     </p>
-    <a href="https://converse.com" target="_blank" class="hover:no-underline active:no-underline link:inline-block link:mb-8 link:text-black visited:text-black visited:mb-8 visited:inline-block">More information &rarr;</a>
-    <div class="colors">
-      <div class="bg-black h-6 w-6 inline-block mr-3"></div>
-      <div class="bg-sky-400 h-6 w-6 inline-block mr-3"></div>
-      <div class="bg-red-600 h-6 w-6 inline-block mr-3"></div>
-      <div class="bg-yellow-400 h-6 w-6 inline-block mr-3"></div>
-      <div class="bg-lime-400 h-6 w-6 inline-block mr-3"></div>
-      <div class="bg-orange-900 h-6 w-6 inline-block mr-3"></div>
-    </div>
+    <a href="https://converse.com" target="_blank" class="more-info">More information &rarr;</a>
+  
+  <div class="colors">
+    <div class="color"></div>
+    <div class="color color-blue"></div>
+    <div class="color color-red"></div>
+    <div class="color color-yellow"></div>
+    <div class="color color-green"></div>
+    <div class="color color-brown"></div>
   </div>
-  <div id="product-details" class="w-[243px] float-left">
+  </div>
+   
+  <div class="product-details">
     <h3 class="details-title">Product details</h3>
     <ul class="details-list">
       <li>Lightweight, durable canvas sneaker</li>
@@ -29,6 +39,7 @@
       <li>Iconic Chuck Taylor ankle patch.</li>
     </ul>
   </div>
-  <button class="uppercase text-xl curser-pointer p-4 clear-both w-full hover:border-t-4 border-black bg-black text-white hover:text-black hover:bg-white hover:border-black m-0">Add to cart</button>
+  </div>
+  <button class="add-cart">Add to cart</button>
 </article>
 {% endblock content %}
