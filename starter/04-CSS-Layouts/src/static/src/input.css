@@ -162,9 +162,9 @@ li:nth-child(even) {
 }
 
 /* Misconception: this won't work! */
-article p:first-child {
+/* article p:first-child {
   color: red;
-}
+} */
 
 /* Styling links */
 a:link {
@@ -210,15 +210,15 @@ nav a:link:last-child {
 }
 
 button {
-  font-size: 22px;
+  /* font-size: 22px;
   padding: 20px;
-  cursor: pointer;
+  cursor: pointer; */
 
-  position: absolute;
+  /* position: absolute; */
   /* top: 50px;
   left: 50px; */
-  bottom: 50px;
-  right: 50px;
+  /* bottom: 50px;
+  right: 50px; */
 }
 
 h1::first-letter {
