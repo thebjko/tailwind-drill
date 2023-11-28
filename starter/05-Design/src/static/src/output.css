@@ -579,3 +579,21 @@ video {
 .inline {
   display: inline;
 }
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
