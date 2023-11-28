@@ -579,3 +579,35 @@ video {
 .inline {
   display: inline;
 }
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.stroke-\[\#087f5b\] {
+  stroke: #087f5b;
+}
+
+.p-24 {
+  padding: 6rem;
+}
