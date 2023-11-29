@@ -588,6 +588,19 @@ video {
   width: 1.5rem;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
+.bg-teal-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 251 241 / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -598,4 +611,9 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.text-teal-100 {
+  --tw-text-opacity: 1;
+  color: rgb(204 251 241 / var(--tw-text-opacity));
 }
