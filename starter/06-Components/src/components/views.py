@@ -1,0 +1,5 @@
+from django.shortcuts import render
+
+# Create your views here.
+def accordion(request):
+    return render(request, 'components/accordion.html')

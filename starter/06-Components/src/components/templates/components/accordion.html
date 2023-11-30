@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}
+Accordion Component
+{% endblock title %}
+
+{% block style %}
+body {
+  font-family: "Inter", sans-serif;
+  color: #18181b;
+}
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+.hidden-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.item {
+  box-shadow: 0 0 32px rgba(0,0,0,0.1);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.open {
+  border-top: 4px solid #fbbf24;
+}
+.open .hidden-box {
+  color: #fbbf24;
+  display: block;
+}
+{% endblock style %}
+
+
+{% block content %}
+<div class="accordion">
+  <div class="item">
+    <p class="number text-2xl font-medium text-amber-600">01</p>
+    <p class="text text-2xl font-medium text-amber-600">질문 되나요??</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon w-6 h-6 stroke-amber-400">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+    <div class="hidden-box">
+      <p class="leading-7 mb-6">{% lorem 24 w random %}</p>
+      <ul class="flex flex-col list-disc text-zinc-600 ml-5">
+        <li>{% lorem 8 w random %}</li>
+        <li>{% lorem 5 w random %}</li>
+        <li>{% lorem 6 w random %}</li>
+        <li>{% lorem 7 w random %}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item open">
+    <p class="number text-2xl font-medium text-amber-600">02</p>
+    <p class="text text-2xl font-medium text-amber-600">How long do I have to return my chair?</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon w-6 h-6 stroke-amber-400">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+    <div class="hidden-box">
+      <p class="leading-7 mb-6">{% lorem 24 w random %}</p>
+      <ul class="flex flex-col list-disc text-zinc-600 ml-5">
+        <li>{% lorem 8 w random %}</li>
+        <li>{% lorem 5 w random %}</li>
+        <li>{% lorem 6 w random %}</li>
+        <li>{% lorem 7 w random %}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <p class="number text-2xl font-medium text-amber-600">03</p>
+    <p class="text text-2xl font-medium text-amber-600">얼마에요?</p>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon w-6 h-6 stroke-amber-400">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    </svg>
+    <div class="hidden-box">
+      <p class="leading-7 mb-6">{% lorem 24 w random %}</p>
+      <ul class="flex flex-col list-disc text-zinc-600 ml-5">
+        <li>{% lorem 8 w random %}</li>
+        <li>{% lorem 5 w random %}</li>
+        <li>{% lorem 6 w random %}</li>
+        <li>{% lorem 7 w random %}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock content %}
