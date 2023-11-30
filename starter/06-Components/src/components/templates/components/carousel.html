@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Carousel Component
+{% endblock title %}
+
+{% block style %}
+body {
+  font-family: "Inter", sans-serif;
+  color: #18181b;
+}
+
+.carousel {
+  background-color: #166534;
+  width: 800px;
+  margin: 100px auto;
+  padding: 32px 48px 32px 86px;
+  {% comment %} padding-left: 86px; {% endcomment %}
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 86px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.testimonial-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.testimonial-job {
+  font-size: 12 px;
+
+}
+
+img {
+  height: 200px;
+  border-radius: 8px;
+  transform: scale(1.5);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* CONTROLS */
+.btn {
+  background-color: #fff;
+  border: none;
+  top: 50%;
+}
+
+.btn--left{
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.btn--right{
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.dots {
+
+}
+.dot {
+
+}
+{% endblock style %}
+
+{% block content %}
+<div class="carousel relative p-8 pl-24 pr-12">
+  <img src="{% static 'components/maria.jpg' %}" alt="Maria de Almeida">
+  <blockquote class="testimonial">
+    <p class="text-zinc-50 testimonial-text">
+      "{% lorem 24 w %}"
+    </p>
+    <p class="text-zinc-100 testimonial-author">Maria de Almeida</p>
+    <p class="text-zinc-100 testimonial-job">Senior Product Manager at EDP Comercial</p>
+  </blockquote>
+
+  <button class="btn btn--left shadow-lg flex justify-center items-center w-12 h-12 rounded-full absolute">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon w-6 h-6 stroke-green-600">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>    
+  </button>
+  <button class="btn btn--right shadow-lg flex justify-center items-center w-12 h-12 rounded-full absolute">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon w-6 h-6 stroke-green-600">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+    </svg>
+  </button>
+  <div class="dots flex gap-2 absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-12">
+    {% for _ in "    " %}
+    <button class="dot w-3 h-3 {% if forloop.first %}bg-green-800{% else %}bg-white{% endif %} border-2 border-green-600 rounded-full">&nbsp;</button>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
