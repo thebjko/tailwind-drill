@@ -17,6 +17,11 @@ body {
 .btn:hover .btn-icon {
   stroke: #fff;
 }
+
+.page-link--current {
+  color: #f4f4f5;
+  background-color: #4338ca;
+}
 {% endblock style %}
 
 {% block content %}
@@ -30,13 +35,13 @@ body {
     </a>
     {% include "components/page.html" with text=1 %}
     {% include "components/page.html" with text=2 %}
-    {% include "components/page.html" with text=3 %}
+    {% include "components/page.html" with text=3 extra='page-link--current' %}
     {% include "components/page.html" with text=4 %}
     {% include "components/page.html" with text=5 %}
     {% include "components/page.html" with text=6 %}
     {% include "components/page.html" with text=7 %}
     {% include "components/page.html" with text=8 %}
-    {% include "components/page.html" with text='...' %}
+    {% include "components/page.html" with text='...' extra='text-slate-400' %}
     {% include "components/page.html" with text=23 %}
 
     <a href="#" class="rounded-full border-2 border-indigo-700 w-12 h-12 flex justify-center items-center hover:bg-indigo-700 group">
