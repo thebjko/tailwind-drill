@@ -6,4 +6,5 @@ app_name = 'components'
 urlpatterns = [
     path('accordion/', views.accordion, name='accordion'),
     path('carousel/', views.carousel, name='carousel'),
+    path('table/', views.table, name='table'),
 ]

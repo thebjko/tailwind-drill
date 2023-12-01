@@ -7,3 +7,7 @@ def accordion(request):
 
 def carousel(request):
     return render(request, 'components/carousel.html')
+
+
+def table(request):
+    return render(request, 'components/table.html')
