@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+Paginator Component
+{% endblock title %}
+
+{% block style %}
+body {
+  font-family: "Inter", sans-serif;
+  color: #18181b;
+}
+
+.btn:hover {
+  background-color: #087f5b
+}
+
+.btn:hover .btn-icon {
+  stroke: #fff;
+}
+{% endblock style %}
+
+{% block content %}
+<main class="flex justify-center p-48">
+  <div class="w-auto grid grid-cols-12 items-center gap-2">
+    <a href="#" class="rounded-full border-2 border-indigo-700 w-12 h-12 flex justify-center items-center hover:bg-indigo-700 group">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-indigo-700 group-hover:stroke-slate-50">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </a>
+    {% include "components/page.html" with text=1 %}
+    {% include "components/page.html" with text=2 %}
+    {% include "components/page.html" with text=3 %}
+    {% include "components/page.html" with text=4 %}
+    {% include "components/page.html" with text=5 %}
+    {% include "components/page.html" with text=6 %}
+    {% include "components/page.html" with text=7 %}
+    {% include "components/page.html" with text=8 %}
+    {% include "components/page.html" with text='...' %}
+    {% include "components/page.html" with text=23 %}
+
+    <a href="#" class="rounded-full border-2 border-indigo-700 w-12 h-12 flex justify-center items-center hover:bg-indigo-700 group">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 stroke-indigo-700 group-hover:stroke-slate-50">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </a>
+  </div>
+</main>
+{% endblock content %}

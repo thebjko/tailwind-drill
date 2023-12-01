@@ -11,3 +11,7 @@ def carousel(request):
 
 def table(request):
     return render(request, 'components/table.html')
+
+
+def paginator(request):
+    return render(request, 'components/paginator.html')
