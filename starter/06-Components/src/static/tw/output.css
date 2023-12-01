@@ -652,6 +652,10 @@ video {
   width: auto;
 }
 
+.flex-shrink {
+  flex-shrink: 1;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
