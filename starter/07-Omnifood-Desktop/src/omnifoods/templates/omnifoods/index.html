@@ -1,7 +1,9 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block link %}
 {{ block.super }}
+<link rel="stylesheet" href="{% static 'omnifoods/style.css' %}">
 {% endblock link %}
 
 {% block title %}
