@@ -14,30 +14,38 @@ Omnifoods
 {% endblock title %}
 
 {% block content %}
-<section class="section-hero">
-  <div class="hero">
-    <div class="hero-text-box">
-      <h1 class="heading-primary">A healthy meal delivered to your door, every single day</h1>
-      <p class="hero-description">
-        The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.
-      </p>
-      <a href="#" class="btn btn--full mr-[1.6rem]">Start eating well</a>
-      <a href="#" class="btn btn--outline">Learn more &darr;</a>
-      <div class="delivered-meals">
-        <div class="delivered-imgs">
-          <img src={% static 'omnifoods/img/customers/customer-1.jpg' %} alt="Customer photo 1">
-          <img src={% static 'omnifoods/img/customers/customer-2.jpg' %} alt="Customer photo 2">
-          <img src={% static 'omnifoods/img/customers/customer-3.jpg' %} alt="Customer photo 3">
-          <img src={% static 'omnifoods/img/customers/customer-4.jpg' %} alt="Customer photo 4">
-          <img src={% static 'omnifoods/img/customers/customer-5.jpg' %} alt="Customer photo 5">
-          <img src={% static 'omnifoods/img/customers/customer-6.jpg' %} alt="Customer photo 6">
+<header class="header">
+  <img src="{% static 'omnifoods/img/omnifood-logo.png' %}" alt="Omnifood logo" class="logo">
+  <nav class="main-nav">
+    Navigation
+  </nav>
+</header>
+<main>
+  <section class="section-hero">
+    <div class="hero">
+      <div class="hero-text-box">
+        <h1 class="heading-primary">A healthy meal delivered to your door, every single day</h1>
+        <p class="hero-description">
+          The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.
+        </p>
+        <a href="#" class="btn btn--full mr-[1.6rem]">Start eating well</a>
+        <a href="#" class="btn btn--outline">Learn more &darr;</a>
+        <div class="delivered-meals">
+          <div class="delivered-imgs">
+            <img src={% static 'omnifoods/img/customers/customer-1.jpg' %} alt="Customer photo 1">
+            <img src={% static 'omnifoods/img/customers/customer-2.jpg' %} alt="Customer photo 2">
+            <img src={% static 'omnifoods/img/customers/customer-3.jpg' %} alt="Customer photo 3">
+            <img src={% static 'omnifoods/img/customers/customer-4.jpg' %} alt="Customer photo 4">
+            <img src={% static 'omnifoods/img/customers/customer-5.jpg' %} alt="Customer photo 5">
+            <img src={% static 'omnifoods/img/customers/customer-6.jpg' %} alt="Customer photo 6">
+          </div>
+          <p class="delivered-text"><span>250,000+</span> meals delivered last year!</p>
         </div>
-        <p class="delivered-text"><span>250,000+</span> meals delivered last year!</p>
+      </div>
+      <div class="hero-image-box">
+        <img src="{% static 'omnifoods/img/hero.png' %}" alt="Woman enjoying food, meals in storage container, and food bowls on a table" class="hero-img">
       </div>
     </div>
-    <div class="hero-image-box">
-      <img src="{% static 'omnifoods/img/hero.png' %}" alt="Woman enjoying food, meals in storage container, and food bowls on a table" class="hero-img">
-    </div>
-  </div>
-</section>
+  </section>
+</main>
 {% endblock content %}
