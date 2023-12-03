@@ -10,6 +10,18 @@
   {% endblock head %}
 </head>
 <body>
+  <header class="flex justify-between items-center bg-[#fdf2e9] h-[9.6rem] px-[4.8rem]">
+    <img src="{% static 'omnifoods/img/omnifood-logo.png' %}" alt="Omnifood logo" class="h-[2.2rem]">
+    <nav class="main-nav">
+      <ul class="flex gap-[3.2rem] items-center">
+        <li><a class="inline-block text-[#35312a] font-medium text-[1.8rem] transition-all duration-300 hover:text-[#cf711f]" href="#">Section 1</a></li>
+        <li><a class="inline-block text-[#35312a] font-medium text-[1.8rem] transition-all duration-300 hover:text-[#cf711f]" href="#">Section 2</a></li>
+        <li><a class="inline-block text-[#35312a] font-medium text-[1.8rem] transition-all duration-300 hover:text-[#cf711f]" href="#">Section 3</a></li>
+        <li><a class="inline-block text-[#35312a] font-medium text-[1.8rem] transition-all duration-300 hover:text-[#cf711f]" href="#">Section 4</a></li>
+        <li><a class="inline-block text-[#fafafa] font-medium text-[1.8rem] transition-all duration-300 hover:bg-[#cf711f] py-[1.2rem] px-[2.4rem] rounded-[9px] bg-[#e67e22]" href="#">Section 5</a></li>
+      </ul>
+    </nav>
+  </header>
   {% block content %}
   {% endblock content %}
 </body>
