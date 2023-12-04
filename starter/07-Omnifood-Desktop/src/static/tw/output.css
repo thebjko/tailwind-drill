@@ -691,11 +691,6 @@ video {
   transition-duration: 300ms;
 }
 
-.before\:rounded-full::before {
-  content: var(--tw-content);
-  border-radius: 9999px;
-}
-
 .hover\:bg-\[\#cf711f\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(207 113 31 / var(--tw-bg-opacity));
