@@ -671,6 +671,11 @@ video {
   border-radius: 9px;
 }
 
+.bg-\[\#45260a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 38 10 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#e67e22\] {
   --tw-bg-opacity: 1;
   background-color: rgb(230 126 34 / var(--tw-bg-opacity));
@@ -709,6 +714,10 @@ video {
 .py-\[1\.2rem\] {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .text-center {

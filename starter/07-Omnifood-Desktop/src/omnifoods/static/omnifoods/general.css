@@ -19,7 +19,7 @@
 
 --- 02 COLORS
 Primary : #e67e22
-Tints : #fdf2e9, #fae5d3
+Tints : #fdf2e9, #fae5d3, #eb984e
 Shades : #cf711f
 Accents : 
 Greys : #57534e, #35312a, #6f6f6f (lightest grey allowed on #fdf2e9)
@@ -31,6 +31,7 @@ https://uifaces.co
 --- 04 ICONS
 
 --- 05 SHADOWS
+  - box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, .075);
 
 --- 06 BORDER-RADIUS
 - Default: 9px
@@ -90,6 +91,7 @@ body {
   letter-spacing: .75px;
 }
 
+.btn,
 .btn:is(:link, :visited) {
   font-size: 2rem;
   font-weight: 600;
@@ -98,6 +100,10 @@ body {
   border-radius: 8px;
 
   transition: background-color .3s, box-shadow .3s;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:is(:link, :visited) {
@@ -123,6 +129,18 @@ body {
   /* Trick to add border inside */
   /* keyword to-left to-bottom blur thickness color */
   box-shadow: inset 0 0 0 3px #e67e22;
+}
+
+.btn--form {
+  /* background-color: #45260a; */
+  color: #fdf2e9;
+  align-self: end;
+  padding: .9rem;
+  /* font-size: 1.8rem; */
+}
+.btn--form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
 }
 
 .container {
@@ -174,4 +192,11 @@ strong {
 
 .grid:not(:last-child) {
   /* background-color: #35312a; */
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 9px; */
+  box-shadow: 0 0 0 0.8rem rgb(231, 126, 35, .5);
 }
