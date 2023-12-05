@@ -577,8 +577,12 @@ video {
   position: static;
 }
 
-.\!mb-20 {
-  margin-bottom: 5rem !important;
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-\[9\.6rem\] {
+  margin-bottom: 9.6rem;
 }
 
 .mr-\[1\.6rem\] {
@@ -625,6 +629,10 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
@@ -649,6 +657,10 @@ video {
 
 .gap-y-36 {
   row-gap: 9rem;
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .rounded-\[9px\] {
