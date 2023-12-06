@@ -1,4 +1,3 @@
-{% load static %}
 /* ******************************************** */
 /* HEADER */
 /* ******************************************** */
@@ -437,6 +436,10 @@
 /* CTA SECTION */
 /* ******************************************** */
 
+.section-cta {
+  padding: 4.8rem 0 12.8rem;
+}
+
 .cta {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -509,3 +512,68 @@ option:first-child {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(136, 65, 3, 0.82);
 }
+
+/* ******************************************** */
+/* FOOTER SECTION */
+/* ******************************************** */
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #e4e4e7;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column; /* + copyright mt-auto */
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-icon {
+  font-size: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: #706d6a;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts{
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:is(:link, :visited) {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #706d6a;
+  transition: all .3s;
+}
+
+.footer-link:is(:hover, :active) {
+  color: #57534e;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+

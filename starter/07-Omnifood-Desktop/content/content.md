@@ -114,15 +114,19 @@ Email: hello@omnifood.com
 Social profiles: instagram, facebook, twitter [links to them not available yet]
 
 ### Additional links [links not available yet]
-
+User Account
 - Create account
 - Sign in
 - iOS app
 - Android app
+
+Business
 - About Omnifood
 - For Business
 - Cooking partners
 - Careers
+
+Resources
 - Recipe directory
 - Help center
 - Privacy & terms
